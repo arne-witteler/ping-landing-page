@@ -7,6 +7,131 @@
   font-family: var(--font-family-sans);
 }
 
+body {
+  min-height: 100vh;                
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.landingpage {
+  display: flex;
+  flex-direction: column;
+}
+
+.landingpage__content {
+  max-width: 712px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.landingpage__logo {
+  margin: 0 auto 40px;
+  display: block;
+  height: 15px;
+  width: auto;
+}
+
+.landingpage__title {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: var(--font-weight-light);
+  color: var(--color-gray-400);
+}
+
+.landingpage__title-highlight {
+  color: var(--color-blue-950);
+  font-weight: var(--font-weight-bold);
+}
+
+.landingpage__subtitle {
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--color-blue-950);
+  font-weight: var(--font-weight-light);
+  margin-top: 12px;
+}
+
+.landingpage__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 40px auto 80px;
+  width: 280px;
+}
+
+.form__label {
+  display: none;
+}
+
+.form__input {
+  padding: 0 24px;
+  height: 40px;
+  border: 1px solid var(--color-blue-200);
+  border-radius: 28px;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: var(--font-weight-light);
+  color: var(--color-blue-200);
+}
+
+.form__button {
+  padding: 0 24px;
+  height: 40px;
+  border: none;
+  background-color: var(--color-blue-500);
+  border-radius: 28px;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+}
+
+.landingpage__illustration {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.landingpage__socials {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingpage__icon {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 1px solid var(--color-blue-200);
+}
+
+.landingpage__icon--facebook {
+  color: var(--color-white);
+  background-color: var(--color-blue-500);
+}
+
+.landingpage__icon--twitter {
+  color: var(--color-blue-500);
+  background-color: var(--color-white);
+  padding: 0.2rem;
+}
+
+.landingpage__icon--instagram {
+  color: var(--color-blue-500);
+  background-color: var(--color-white);
+}
+
+.landingpage__copyright {
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--color-gray-400);
+  font-weight: var(--font-weight-light);
+  margin-top: 24px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -14,3 +139,35 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 768px) {
+  .landingpage__logo {
+    height: 25px;
+  }
+
+  .landingpage__form {
+    flex-direction: row;
+    width: 712px;
+    gap: 16px;
+  }
+
+  .landingpage__title {
+    font-size: 48px;
+  }
+
+  .landingpage__subtitle {
+    font-size: 20px;
+  }
+
+  .form__input {
+    width: 420px;
+    font-size: 16px;
+    height: 56px;
+  }
+
+  .form__button {
+    font-size: 16px;
+    width: 200px;
+    height: 56px;
+  }
+}}
