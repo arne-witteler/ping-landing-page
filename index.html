@@ -9,16 +9,22 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <main class="landingpage">
+      <section class="landingpage__content">
+        <img class="landingpage__logo" src="images/logo.svg" alt="Ping logo">
+        <h1 class="landingpage__title">We are launching soon!</h1>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
+        <p class="landingpage__subtitle">Subscribe and get notified</p>
+        <form class="landingpage__form" id="notify-form" novalidate>
+          <label class="form__label sr-only" for="email">Email Address</label>
+          <input class="form__input" type="email" id="email" placeholder="Your email address..."/>
+          <button class="form__button">Notify Me</button>
+        </form>
+        <img class="landingpage__illustration" src="images/illustration-dashboard.png" alt="Illustration of a dashboard">
+        <p class="landingpage__copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </section>
+    </main>
+    <footer>
       <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/arne-witteler">Arne Witteler</a>.
