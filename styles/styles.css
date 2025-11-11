@@ -95,33 +95,23 @@ body {
 }
 
 .landingpage__socials {
-  display: flex;
-  gap: 0.5rem;
   justify-content: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
   align-items: center;
 }
 
 .landingpage__icon {
-  width: 31px;
-  height: 31px;
+  fill: var(--color-blue-500);
+  width: 28px;
+  height: 28px;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+  border: 1px solid var(--color-blue-500);
   border-radius: 50%;
-  border: 1px solid var(--color-blue-200);
-}
-
-.landingpage__icon--facebook {
-  color: var(--color-white);
-  background-color: var(--color-blue-500);
-}
-
-.landingpage__icon--twitter {
-  color: var(--color-blue-500);
-  background-color: var(--color-white);
-  padding: 0.2rem;
-}
-
-.landingpage__icon--instagram {
-  color: var(--color-blue-500);
-  background-color: var(--color-white);
+  padding: 5px;
 }
 
 .landingpage__copyright {
@@ -170,4 +160,4 @@ body {
     width: 200px;
     height: 56px;
   }
-}}
+}
