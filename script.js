@@ -29,6 +29,7 @@ emailInput.addEventListener('input', () => {
       errorMessage.style.display = 'none';
       button.classList.remove('error');
     } else {
+      errorMessage.textContent = "Please provide a valid email address";
       errorMessage.style.display = 'block';
       button.classList.add('error');
       emailInput.classList.add('error');
@@ -40,6 +41,14 @@ emailInput.addEventListener('input', () => {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const value = emailInput.value.trim();
+
+  if (value === '') {
+    errorMessage.textContent = "Whoops! It looks like you forgot to add your email";
+    errorMessage.style.display = 'block';
+    button.classList.add('error');
+    emailInput.classList.add('error');
+    return;
+  }
 
   if (!isValidEmail(value)) {
     // invalid
